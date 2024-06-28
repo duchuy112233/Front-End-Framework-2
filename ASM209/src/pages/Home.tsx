@@ -6,10 +6,13 @@ import { Link } from 'react-router-dom'
 type Props = {
   products: Product[]
 }
+const formatCurrency = (amount: number) => {
+  return amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+}
 const Home = ({ products }: Props) => {
   return (
     <>
-      <Banner />
+      {/* <Banner /> */}
       <h1 className='mt-10'>SẢN PHẨM BÁN CHẠY</h1>
       <div className='grid grid-cols-4 gap-4 mt-10'>
         {products.map((product) => (
@@ -35,12 +38,13 @@ const Home = ({ products }: Props) => {
                   <div className='sold text-xs text-[#787878]'>Đã bán 1000+</div>
                 </div>
                 <div className='price color-price flex items-center text-red-500 text-[20px]'>
-                  <span>{product.price}</span> ₫
+                  <span>{formatCurrency(product.price)}</span> ₫
                   <div className='ml-2 text-xs border border-red-500 bg-[#FFF0F1]'>-23%</div>
                 </div>
-                <div className='text-red-500 slogan color-price flex relative mt-1'>
-                  <p className='uppercase text-xs pl-1'>Xếp hạng: {product.rating}</p>
+                <div className='text-yellow-500 slogan color-price flex relative mt-1'>
+                  <p className='uppercase text-xs pl-1'>Xếp hạng: {product.rating} Sao</p>
                 </div>
+
                 <div className='mt-4'>
                   <a href='#' className='hover:text-red-300 text-gray-700 font-bold rounded'>
                     Thêm vào giỏ hàng

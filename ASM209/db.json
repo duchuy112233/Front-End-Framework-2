@@ -1,32 +1,22 @@
 {
   "products": [
     {
-      "title": "Iphone X",
-      "price": 4000333,
+      "title": "dsfsfs",
+      "price": 34000000,
       "description": "Bạn là một người mới sử dụng điện thoại lần đầu, hoặc mới chuyển từ iPhone sang dùng điện thoại Android và được người quen khuyên nên mua điện thoại Samsung. Nhưng bạn vẫn còn đang băn khoăn không biết điện thoại Samsung là của nước nào? Có tốt không? Vì vậy, hãy cùng Siêu thị Điện Máy - Nội Thất Chợ Lớn đi giải đáp câu hỏi này nhé!",
-      "thumbnail": "https://cdn.tgdd.vn/Products/Images/44/303499/msi-gaming-gf63-thin-11uc-i5-1230vn-thumb-600x600.jpg",
-      "id": 1
-    },
-    {
-      "title": "Samsung Galaxy Book",
-      "price": 1499,
-      "description": "Bạn là một người mới sử dụng điện thoại lần đầu, hoặc mới chuyển từ iPhone sang dùng điện thoại Android và được người quen khuyên nên mua điện thoại Samsung. Nhưng bạn vẫn còn đang băn khoăn không biết điện thoại Samsung là của nước nào? Có tốt không? Vì vậy, hãy cùng Siêu thị Điện Máy - Nội Thất Chợ Lớn đi giải đáp câu hỏi này nhé!",
-      "thumbnail": "https://cdn.tgdd.vn/Products/Images/44/303499/msi-gaming-gf63-thin-11uc-i5-1230vn-thumb-600x600.jpg",
-      "id": 7
-    },
-    {
-      "title": "Key Holder",
-      "price": 30,
-      "description": "Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality",
       "thumbnail": "https://savani.vn/images/products/2023/10/27/large/ao-thun-co-co-ngan-tay-MPC014S3-2-C03.jpg",
-      "id": 30
+      "rating": 4,
+      "category": "pc",
+      "id": 32
     },
     {
-      "title": "hjyyyy",
-      "price": 188000,
-      "description": "đẹp chất lượng",
-      "thumbnail": "https://cdn.tgdd.vn/Products/Images/44/303499/msi-gaming-gf63-thin-11uc-i5-1230vn-thumb-600x600.jpg",
-      "id": 31
+      "title": "rqưe3qeqw",
+      "price": 34000000,
+      "description": "Bạn là một người mới sử dụng điện thoại lần đầu, hoặc mới chuyển từ iPhone sang dùng điện thoại Android và được người quen khuyên nên mua điện thoại Samsung. Nhưng bạn vẫn còn đang băn khoăn không biết điện thoại Samsung là của nước nào? Có tốt không? Vì vậy, hãy cùng Siêu thị Điện Máy - Nội Thất Chợ Lớn đi giải đáp câu hỏi này nhé!",
+      "thumbnail": "https://savani.vn/images/products/2023/10/27/large/ao-thun-co-co-ngan-tay-MPC014S3-2-C03.jpg",
+      "rating": 5,
+      "category": "laptop",
+      "id": 33
     }
   ],
   "carts": [
@@ -97,7 +87,5 @@
       "password": "$2a$10$tw/JQXJqjYOYuitNw54GAucUIO9LtZLgkNYEcgFSmn6qAaiGe.29G",
       "id": 1
     }
-
-
   ]
 }

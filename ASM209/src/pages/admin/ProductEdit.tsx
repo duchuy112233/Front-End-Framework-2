@@ -97,6 +97,39 @@ const ProductEdit = ({ onEdit }: Props) => {
             {...register('thumbnail', { required: true, minLength: 5 })}
           />
         </div>
+        {/* Rating */}
+        <div className='mb-4'>
+          <label htmlFor='rating' className='block'>
+            Đánh giá
+          </label>
+          <input
+            type='number'
+            className='border border-gray-300 p-2 w-full rounded-md'
+            id='rating'
+            defaultValue={product?.rating}
+            placeholder='Đánh giá sản phẩm...'
+            {...register('rating', { required: true, min: 1, max: 5 })}
+          />
+               {errors.rating && <span className='text-red-500'>{errors.rating.message}</span>}
+        </div>
+        {/* Category */}
+        <div className='mb-4'>
+          <label htmlFor='category' className='block'>
+            Danh mục sản phẩm
+          </label>
+          <select
+            id='category'
+            className='w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500'
+            {...register('category', { required: true })}
+          >
+            <option value=''>Chọn danh mục</option>
+            <option value='điện thoại'>Điện thoại</option>
+            <option value='laptop'>Laptop</option>
+            <option value='pc'>PC</option>
+          </select>
+          {errors.category && <span className='text-red-500'>Vui lòng chọn danh mục sản phẩm.</span>}
+        </div>
+
         <button type='submit' className='bg-blue-500 text-white py-2 px-4 rounded-md w-full'>
           Xác nhận
         </button>
