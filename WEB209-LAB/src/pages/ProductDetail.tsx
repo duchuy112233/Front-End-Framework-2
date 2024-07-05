@@ -15,7 +15,7 @@ const ProductDetail = () => {
     ////Thời gian loading... trang
     setTimeout(() => {
       setLoading(false)
-    }, 2000)
+    }, 1000)
     ////Detail
     ;(async () => {
       const data = await getProduct(+id!)
