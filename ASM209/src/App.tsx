@@ -10,7 +10,7 @@ import Home from './pages/Home'
 import ProductDetail from './pages/ProductDetail'
 //
 // import Shop from './pages/Shop'
-import About from './pages/About'
+
 import NotFound from './pages/NotFound'
 //admin
 import Dashboard from './pages/admin/Dashboard'
@@ -19,6 +19,7 @@ import ProductEdit from './pages/admin/ProductEdit'
 //
 import Login from './pages/Login'
 import Register from './pages/Register'
+import LayoutAdmin from './components/layouts/LayoutAdmin'
 
 const App = () => {
   // Hiển thị
@@ -68,11 +69,11 @@ const App = () => {
               <Route path='/'>
                 <Route index element={<Home products={products} />} />
                 {/* <Route path='/shop' element={<Shop />} /> */}
-                <Route path='/about' element={<About />} />
-                <Route path='/shop/:id' element={<ProductDetail />} />
+                
+                <Route path='/detail/:id' element={<ProductDetail />} />
               </Route>
               {/* admin */}
-              <Route path='/admin'>
+              <Route path='/admin' element={<LayoutAdmin />}>
                 <Route path='/admin' element={<Dashboard products={products} onDel={handleDeleteProduct} />} />
                 <Route path='/admin/add' element={<ProductAdd onAdd={handleAddProduct} />} />
                 <Route path='/admin/edit/:id' element={<ProductEdit onEdit={handleEditProduct} />} />

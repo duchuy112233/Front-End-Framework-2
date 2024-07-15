@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { getProduct } from '~/apis/product'
-import { Product } from '~/types/Product'
+import { getProduct } from '../apis/product'
+import { Product } from '../types/Product'
 
 const ProductDetail = () => {
   const { id } = useParams()
@@ -15,7 +15,7 @@ const ProductDetail = () => {
     ////Thời gian loading... trang
     setTimeout(() => {
       setLoading(false)
-    }, 2000)
+    }, 1000)
     ////Detail
     ;(async () => {
       const data = await getProduct(+id!)
@@ -69,7 +69,7 @@ const ProductDetail = () => {
   }
   const addToCart = () => {
     // Thêm logic xử lý thêm sản phẩm vào giỏ hàng ở đây
-
+    console.log('Them thanh cong')
     // Hiển thị thông báo khi đã thêm sản phẩm vào giỏ hàng
     showAlertMessage('Đã thêm sản phẩm vào giỏ hàng')
   }

@@ -1497,5 +1497,13 @@
       ],
       "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Kiwi/thumbnail.png"
     }
+  ],
+  "users": [
+    {
+      "email": "quochungnhi88@gmail.com",
+      "password": "$2a$10$tw/JQXJqjYOYuitNw54GAucUIO9LtZLgkNYEcgFSmn6qAaiGe.29G",
+      "id": 1
+    }
   ]
+
 }

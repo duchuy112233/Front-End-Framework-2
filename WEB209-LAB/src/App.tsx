@@ -17,6 +17,9 @@ import Dashboard from './pages/admin/Dashboard'
 import ProductAdd from './pages/admin/ProductAdd'
 import ProductEdit from './pages/admin/ProductEdit'
 //
+import Login from './pages/Login'
+import Register from './pages/Register'
+//
 
 const App = () => {
   // Hiển thị
@@ -49,7 +52,9 @@ const App = () => {
                 <Route path='/admin/add' element={<ProductAdd />} />
                 <Route path='/admin/edit/:id' element={<ProductEdit />} />
               </Route>
-           
+                {/* Login-Register */}
+                <Route path='/login' element={<Login />} />
+              <Route path='/register' element={<Register />} />
             
               {/* /404/ */}
               <Route path='*' element={<NotFound />} />

@@ -5,13 +5,13 @@ const Footer = () => {
       <div className='mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8'>
         <div className='grid grid-cols-1 gap-8 lg:grid-cols-3'>
           <div>
-            <div className='text-teal-600'>
+          <div className='text-teal-600'>
               <img
                 className='w-[150px]'
-                src='https://upload.wikimedia.org/wikipedia/commons/1/1b/Logo-FPT-Shop-Black.png'
+                src='https://inhoangha.com/uploads/logo-starbucks.jpg'
                 alt=''
               />
-              123456788
+              123456789999999999
             </div>
 
             <p className='mt-4 max-w-xs text-gray-500'>

@@ -4,11 +4,11 @@ const Header = () => {
     <>
       <header className='bg-white py-4 fixed top-0 left-0 right-0 z-50 border-b border-black-500'>
         <div className=' ml-20 mr-20 flex items-center justify-between'>
-          <div>
+        <div>
             <NavLink to='/' className='hover:text-gray-300'>
               <img
                 className='w-[100px]'
-                src='https://upload.wikimedia.org/wikipedia/commons/1/1b/Logo-FPT-Shop-Black.png'
+                src='https://inhoangha.com/uploads/logo-starbucks.jpg'
                 alt=''
               />
             </NavLink>
