@@ -1,0 +1,30 @@
+{
+  "products": [
+    {
+      "title": "fdsfdf",
+      "price": 4444444,
+      "description": "đẹp chất lượng",
+      "image": "https://picsum.photos/200/200",
+      "category": "Clothing",
+      "id": 1,
+      "isShowProduct": true
+    },
+    {
+      "title": "hshasudsad",
+      "price": "3123231",
+      "image": "https://noithatchungcu24h.com/wp-content/uploads/2016/07/CAM11.jpg",
+      "description": "Bạn là một người mới sử dụng điện thoại lần đầu, hoặc mới chuyển từ iPhone sang dùng điện thoại Android và được người quen khuyên nên mua điện thoại Samsung. Nhưng bạn vẫn còn đang băn khoăn không biết điện thoại Samsung là của nước nào? Có tốt không? Vì vậy, hãy cùng Siêu thị Điện Máy - Nội Thất Chợ Lớn đi giải đáp câu hỏi này nhé!",
+      "category": "Food",
+      "isShowProduct": true,
+      "id": 2
+    }
+  ],
+  "users": [
+    {
+      "email": "quochungnhi@gmail.com",
+      "password": "$2a$10$dO55ykCmNqyyasmotrzznOA6XmA/.Fb5QCyaZ6cpHHMuWB0JChF0.",
+      "username": "shophuyduc",
+      "id": 1
+    }
+  ]
+}
