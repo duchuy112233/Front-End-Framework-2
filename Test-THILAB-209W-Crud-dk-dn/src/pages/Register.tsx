@@ -15,6 +15,9 @@ const Register = () => {
     message: "",
     type: "",
   });
+
+
+  
   const {
     register,
     handleSubmit,

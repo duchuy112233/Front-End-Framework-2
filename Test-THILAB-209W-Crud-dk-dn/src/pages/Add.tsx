@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { SubmitHandler } from 'react-hook-form';
-import { Product } from '../types/Product';
-import ProductForm from '../components/ProductForm';
+import React, { useState } from "react";
+import { SubmitHandler } from "react-hook-form";
+import { Product } from "../types/Product";
+import ProductForm from "../components/ProductForm";
 
 type Props = {
   onAdd: (product: Product) => void;
@@ -9,14 +9,14 @@ type Props = {
 
 const Add: React.FC<Props> = ({ onAdd }) => {
   const [error, setError] = useState<string | null>(null);
-  
+
   const onSubmit: SubmitHandler<Product> = async (data: Product) => {
     try {
       await onAdd(data);
-      alert('Sản phẩm đã được thêm thành công!');
+      alert("Sản phẩm đã được thêm thành công!");
     } catch (error) {
-      setError('Có lỗi xảy ra khi thêm sản phẩm.');
-    } 
+      setError("Có lỗi xảy ra khi thêm sản phẩm.");
+    }
   };
 
   return (
@@ -27,11 +27,11 @@ const Add: React.FC<Props> = ({ onAdd }) => {
         <ProductForm
           onSubmit={onSubmit}
           initialValues={{
-            title: '',
+            title: "",
             price: 0,
-            image: '',
-            description: '',
-            category: '',
+            image: "",
+            description: "",
+            category: "",
             isShowProduct: true,
           }}
         />

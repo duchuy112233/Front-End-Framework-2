@@ -1,4 +1,4 @@
-import { FieldErrors } from "react-hook-form";
+import { FieldErrors } from "react-hook-form";  
 import { ProductFormParams } from "../types/Product";
 
 export const validateProductForm = (
