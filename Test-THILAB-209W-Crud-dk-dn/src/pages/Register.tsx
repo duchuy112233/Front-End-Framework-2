@@ -16,8 +16,6 @@ const Register = () => {
     type: "",
   });
 
-
-  
   const {
     register,
     handleSubmit,

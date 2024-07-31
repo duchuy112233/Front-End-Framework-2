@@ -15,6 +15,7 @@ const Login = () => {
     message: "",
     type: "",
   });
+  
   const {
     register,
     handleSubmit,
@@ -26,7 +27,7 @@ const Login = () => {
   const onSubmit = async (users: User) => {
     try {
       const { data } = await instance.post(`/login`, users);
-
+      
       localStorage.setItem("token", data.accessToken);
 
       if (data.user) {
