@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useForm, SubmitHandler } from "react-hook-form";
+//////////////////////////////////////
 import { ProductFormParams } from "../types/Product";
-import { validateProductForm } from "./../validation/ValidationForm";
-
+//////////////////////////////////////
 type ProductFormProps = {
   onSubmit: (values: ProductFormParams) => void;
   initialValues?: ProductFormParams;
   product?: ProductFormParams;
 };
-
+//
 const ProductForm: React.FC<ProductFormProps> = ({
   onSubmit,
   initialValues,
@@ -21,22 +21,12 @@ const ProductForm: React.FC<ProductFormProps> = ({
     formState: { errors },
   } = useForm<ProductFormParams>({
     defaultValues: initialValues,
-    resolver: async (values) => {
-      const errors = validateProductForm(values);
-      return { values, errors };
-    },
   });
-
+  //
   const handleFormSubmit: SubmitHandler<ProductFormParams> = async (data) => {
-    try {
-      // Call the onSubmit function with form data
       onSubmit(data);
-    } catch (error) {
-      // Handle submission error
-      console.error("Submit Error:", error);
-    }
   };
-
+  //
   return (
     <div>
       <form className="form" onSubmit={handleSubmit(handleFormSubmit)}>
@@ -50,7 +40,7 @@ const ProductForm: React.FC<ProductFormProps> = ({
             className="border border-gray-300 p-2 w-full rounded-md"
             id="title"
             placeholder="Tên sản phẩm..."
-            {...register("title")}
+            {...register("title", { required: "Tên sản phẩm là bắt buộc" })}
           />
           {errors.title && (
             <span className="text-red-500">{errors.title.message}</span>
@@ -66,42 +56,16 @@ const ProductForm: React.FC<ProductFormProps> = ({
             className="border border-gray-300 p-2 w-full rounded-md"
             id="price"
             placeholder="0"
-            {...register("price")}
+            {...register("price", {
+              required: "Giá sản phẩm là bắt buộc",
+              min: {
+                value: 0.01,
+                message: "Giá sản phẩm phải lớn hơn 0",
+              },
+            })}
           />
           {errors.price && (
             <span className="text-red-500">{errors.price.message}</span>
-          )}
-        </div>
-        {/* Mô tả */}
-        <div className="mb-4">
-          <label htmlFor="description" className="block">
-            Mô tả
-          </label>
-          <input
-            type="text"
-            className="border border-gray-300 p-2 w-full rounded-md"
-            id="description"
-            placeholder="Mô tả sản phẩm ..."
-            {...register("description")}
-          />
-          {errors.description && (
-            <span className="text-red-500">{errors.description.message}</span>
-          )}
-        </div>
-        {/* Ảnh */}
-        <div className="mb-4">
-          <label htmlFor="image" className="block">
-            Hình ảnh
-          </label>
-          <input
-            type="text"
-            className="border border-gray-300 p-2 w-full rounded-md"
-            id="image"
-            placeholder="Ảnh sản phẩm..."
-            {...register("image")}
-          />
-          {errors.image && (
-            <span className="text-red-500">{errors.image.message}</span>
           )}
         </div>
         {/* Category */}
@@ -112,13 +76,13 @@ const ProductForm: React.FC<ProductFormProps> = ({
           <select
             id="category"
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-            {...register("category")}
+            {...register("category", {
+              required: "Danh mục sản phẩm là bắt buộc",
+            })}
           >
             <option value="">Chọn danh mục</option>
-            <option value="Electronics">Điện tử</option>
-            <option value="Furniture">Nội thất</option>
-            <option value="Clothing">Thời trang</option>
-            <option value="Food">Thực phẩm</option>
+            <option value="Điện tử">Điện tử</option>
+            <option value="Nội thất">Nội thất</option>
           </select>
           {errors.category && (
             <span className="text-red-500">{errors.category.message}</span>
