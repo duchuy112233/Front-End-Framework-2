@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "title": "haha4444",
+      "image": "https://th.bing.com/th/id/OIP.mrNCnCZ2XkObl2lRpf8dJQHaEa?pid=ImgDet&w=207&h=123&c=7&dpr=1.3",
+      "price": "4445555",
+      "isNew": true,
+      "status": "Publish",
+      "id": 1
+    },
+    {
+      "title": "san pham 44",
+      "image": "https://th.bing.com/th/id/OIP.mrNCnCZ2XkObl2lRpf8dJQHaEa?pid=ImgDet&w=207&h=123&c=7&dpr=1.3",
+      "price": "188000",
+      "isNew": false,
+      "status": "Publish",
+      "id": 2
+    },
+    {
+      "title": "77788888",
+      "image": "https://noithatchungcu24h.com/wp-content/uploads/2016/07/CAM11.jpg",
+      "price": "34000000",
+      "isNew": true,
+      "status": "Publish",
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "email": "quochungnhi@gmail.com",
+      "password": "$2a$10$yrtr7Jn.mfDEe9/8WZpX0u9cFFJa74FRzJ/7sD47RP5Jpsq4244By",
+      "id": 1
+    },
+    {
+      "email": "quochungnhi44@gmail.com",
+      "password": "$2a$10$jaBCeYt7hi.XeUkrB8WLQeZxR2TuweCqtshzVk93EfVQ7sTmQgvG6",
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "products": [],
+  "users": [
+    {
+      "email": "quochungnhi@gmail.com",
+      "password": "$2a$10$yZzD9ctpe9quGKmF/zU7Bux/9/cZ8Oz/1/rK8cXzC9KX.2RRq1R4S",
+      "id": 1
+    }
+  ]
+}

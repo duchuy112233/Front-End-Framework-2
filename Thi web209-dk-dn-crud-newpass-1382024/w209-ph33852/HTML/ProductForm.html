@@ -1,0 +1,41 @@
+<form>
+  <div className="form-group mt-3 mb-3">
+    <label htmlFor="name">Tên sản phẩm</label>
+    <input
+      id="name"
+      type="text"
+      className="form-control"
+      placeholder="Nhập tên sản phẩm"
+    />
+    <small className="form-text text-danger">errors name</small>
+  </div>
+  {/* ///////////////////// */}
+  <div className="form-group mb-3">
+    <label htmlFor="price">Giá</label>
+    <input
+      id="price"
+      type="number"
+      className="form-control"
+      placeholder="Nhập giá"
+    />
+  </div>
+  {/* ///////////////////// */}
+  <div className="form-group mb-3 form-check">
+    <input id="isShow" type="checkbox" className="form-check-input" />
+    <label className="form-check-label" htmlFor="isShow">
+      Hiển thị sản phẩm
+    </label>
+  </div>
+  {/* ///////////////////// */}
+  <div className="form-group mb-3">
+    <label htmlFor="category">Danh mục</label>
+    <select id="category" className="form-select">
+      <option value="">Chọn danh mục</option>
+      <option value="Áo">Áo</option>
+      <option value="Quần">Quần</option>
+      <option value="Giày">Giày</option>
+    </select>
+  </div>
+  {/* ///////////////////// */}
+  <button type="submit" className="btn btn-primary">Gửi</button>
+</form>
